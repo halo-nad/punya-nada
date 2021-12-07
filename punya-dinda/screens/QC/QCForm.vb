@@ -3,6 +3,7 @@
     Dim completeOrders As New List(Of PpicWorkModel)()
     Dim selectedWo As PpicWorkModel
     Private Sub QCForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        canWeAccessThis(New List(Of String)({"qc", "admin"}), Me)
         completeOrders = prodCont.getCompleteWorkOrders()
         ComboBox1.Items.Clear()
         For Each workOrder In completeOrders

@@ -32,48 +32,52 @@ Partial Class QualityControl
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(28, 42)
+        Me.Label1.Location = New System.Drawing.Point(24, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 20)
+        Me.Label1.Size = New System.Drawing.Size(97, 15)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Tanggal Produksi"
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(168, 39)
+        Me.ComboBox1.Location = New System.Drawing.Point(147, 29)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(151, 28)
+        Me.ComboBox1.Size = New System.Drawing.Size(133, 23)
         Me.ComboBox1.TabIndex = 1
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(168, 109)
+        Me.DataGridView1.Location = New System.Drawing.Point(147, 82)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(488, 188)
+        Me.DataGridView1.Size = New System.Drawing.Size(427, 141)
         Me.DataGridView1.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(55, 348)
+        Me.Button1.Location = New System.Drawing.Point(48, 261)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
+        Me.Button1.Size = New System.Drawing.Size(82, 22)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Save"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'QualityControl
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(700, 338)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "QualityControl"
         Me.Text = "QualityControl"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

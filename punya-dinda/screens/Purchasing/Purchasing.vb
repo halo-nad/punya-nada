@@ -1,10 +1,11 @@
-﻿Public Class PurchaseRaw
+﻿Public Class Purchasing
     Dim repository As Repository = Repository.getInstance()
     Dim selectedProduct As ProductModel
     Dim orderList As New List(Of PurchasingInvoiceItem)()
     Dim logistic As LogisticControllers = LogisticControllers.getInstance()
     Dim total = 0
     Private Sub PurchaseRaw_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        canWeAccessThis(New List(Of String)({"purchasing", "admin"}), Me)
         repository.showData($"SELECT * FROM {TABLE_RAW_MATERIAL}", DataGridView1)
     End Sub
 

@@ -1,8 +1,9 @@
-﻿Public Class ProductionGoods
+﻿Public Class ProduksiFG
     Dim prodCont As ProductionController = ProductionController.getInstance()
     Dim pendingWo As New List(Of PpicWorkModel)()
     Dim selectedWo As PpicWorkModel
     Private Sub ProductionGoods_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        canWeAccessThis(New List(Of String)({"produksi", "admin"}), Me)
         pendingWo = prodCont.getPendingWorkOrders()
         ComboBox1.Items.Clear()
         For Each workOrder In pendingWo

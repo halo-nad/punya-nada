@@ -1,4 +1,4 @@
-﻿Public Class PpicWorkOrder
+﻿Public Class ProduksiWorkOrder
     Dim repository As Repository = Repository.getInstance()
     Dim orderList As New List(Of MarketingInvoiceDetail)()
     Dim selectedProduct As ProductModel

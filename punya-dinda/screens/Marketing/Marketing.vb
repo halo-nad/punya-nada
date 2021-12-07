@@ -1,10 +1,11 @@
-﻿Public Class PurchaseFg
+﻿Public Class Marketing
     Dim repository As Repository = Repository.getInstance()
     Dim selectedProduct As ProductModel
     Dim selectedCustomer As CustomerModel
     Dim orderList As New List(Of MarketingInvoiceDetail)()
     Dim total As Integer
     Private Sub PurchaseFg_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        canWeAccessThis(New List(Of String)({"marketing", "admin"}), Me)
         repository.showData($"SELECT * FROM {TABLE_PRODUK}", DataGridView1)
         repository.showData($"SELECT * FROM {TABLE_CUSTOMER}", DataGridView2)
     End Sub

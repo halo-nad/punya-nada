@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class PpicMainForm
+Partial Class ProduksiMainForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -38,6 +38,7 @@ Partial Class PpicMainForm
         Me.ColumnHeader7 = New System.Windows.Forms.ColumnHeader()
         Me.ColumnHeader8 = New System.Windows.Forms.ColumnHeader()
         Me.ColumnHeader9 = New System.Windows.Forms.ColumnHeader()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -154,11 +155,21 @@ Partial Class PpicMainForm
         Me.ColumnHeader9.Name = "ColumnHeader3"
         Me.ColumnHeader9.Text = "Quantity"
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(480, 198)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(95, 45)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Produksi"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'PpicMainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(820, 472)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ListView3)
         Me.Controls.Add(Me.Label2)
@@ -189,4 +200,5 @@ Partial Class PpicMainForm
     Friend WithEvents ColumnHeader7 As ColumnHeader
     Friend WithEvents ColumnHeader8 As ColumnHeader
     Friend WithEvents ColumnHeader9 As ColumnHeader
+    Friend WithEvents Button2 As Button
 End Class

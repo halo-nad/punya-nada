@@ -1,11 +1,11 @@
-﻿Public Class PpicMainForm
+﻿Public Class ProduksiMainForm
     Dim logistic As LogisticControllers = LogisticControllers.getInstance()
     Dim marketing As MarketingController = MarketingController.getInstance()
     Dim productStock As List(Of LogisticProductStatusPresentation)
     Dim rawStock As List(Of LogisticProductStatusPresentation)
     Dim productRequired As List(Of LogisticProductStatusPresentation)
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        PpicWorkOrder.Show()
+        ProduksiWorkOrder.Show()
     End Sub
 
     Private Sub PpicMainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -21,5 +21,9 @@
         For Each raw In rawStock
             ListView2.Items.Add(New ListViewItem(New String() {raw.id, raw.name, raw.quantity}))
         Next
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ProduksiFG.Show()
     End Sub
 End Class

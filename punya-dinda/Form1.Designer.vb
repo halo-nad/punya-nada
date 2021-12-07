@@ -29,11 +29,10 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -42,7 +41,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(80, 39)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Create FG Invoice"
+        Me.Button1.Text = "Pesanan"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -78,7 +77,7 @@ Partial Class Form1
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Products"
+        Me.Button3.Text = "Marketing"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
@@ -96,44 +95,17 @@ Partial Class Form1
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(80, 39)
         Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Purchase Raw"
+        Me.Button5.Text = "Purchasing"
         Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(224, 312)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(80, 39)
-        Me.Button6.TabIndex = 7
-        Me.Button6.Text = "WareHouse"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(360, 206)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(80, 39)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "Production Goods"
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(360, 279)
+        Me.Button8.Location = New System.Drawing.Point(242, 247)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(80, 39)
         Me.Button8.TabIndex = 9
         Me.Button8.Text = "QC"
         Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.Location = New System.Drawing.Point(481, 268)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(80, 39)
-        Me.Button9.TabIndex = 10
-        Me.Button9.Text = "Logistic"
-        Me.Button9.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -145,16 +117,33 @@ Partial Class Form1
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "PT. Air Merdeka Sejahtera"
         '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(330, 135)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(80, 39)
+        Me.Button10.TabIndex = 12
+        Me.Button10.Text = "Warehouse FG"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(441, 135)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(80, 39)
+        Me.Button11.TabIndex = 13
+        Me.Button11.Text = "Warehouse RM"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(613, 450)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -176,9 +165,8 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button11 As Button
 End Class

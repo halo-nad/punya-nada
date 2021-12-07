@@ -1,7 +1,7 @@
 ﻿Public Class Form1
     Dim repository As Repository = Repository.getInstance()
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        PurchaseFg.Show()
+        Marketing.Show()
 
     End Sub
 
@@ -20,26 +20,30 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        PpicMainForm.Show()
+        ProduksiMainForm.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        PurchaseRaw.Show()
+        Purchasing.Show()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        WareHouse.Show()
-    End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        ProductionGoods.Show()
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
+        ProduksiFG.Show()
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         QCForm.Show()
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        Logistik.Show()
+
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        WH_FG.Show()
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        WarehouseRM.Show()
     End Sub
 End Class
