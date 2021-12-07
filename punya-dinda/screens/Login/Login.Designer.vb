@@ -31,12 +31,13 @@ Partial Class Login
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(111, 116)
+        Me.Button2.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.Button2.Location = New System.Drawing.Point(89, 117)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Login"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -50,7 +51,7 @@ Partial Class Login
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 65)
+        Me.Label2.Location = New System.Drawing.Point(12, 68)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 15)
         Me.Label2.TabIndex = 3
@@ -58,14 +59,14 @@ Partial Class Login
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(78, 28)
+        Me.TextBox1.Location = New System.Drawing.Point(89, 28)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(153, 23)
         Me.TextBox1.TabIndex = 4
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(78, 65)
+        Me.TextBox2.Location = New System.Drawing.Point(89, 65)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(153, 23)
         Me.TextBox2.TabIndex = 5
@@ -74,7 +75,8 @@ Partial Class Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(324, 183)
+        Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.ClientSize = New System.Drawing.Size(263, 168)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
@@ -82,6 +84,7 @@ Partial Class Login
         Me.Controls.Add(Me.Button2)
         Me.Name = "Login"
         Me.Text = "Login"
+        Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
